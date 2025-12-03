@@ -15,13 +15,14 @@ const items = [
 
 export default function SectionGallery() {
   return (
-    <section className="">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 relative">
-        <h2 className="text-2xl font-bold text-gray-900 ml-2 sm:ml-16 text-center sm:text-left mb-6 sm:mb-0">
-          POPULER URUNLER
+    <section className="w-full">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4 relative">
+        
+        <h2 className="text-2xl font-bold text-white ml-2 sm:ml-16 text-center sm:text-left">
+          POPÜLER ÜRÜNLER
         </h2>
 
-        {/* oklar sadece masaüstünde görünür */}
+        {/* Masaüstü oklar */}
         <div className="hidden sm:flex items-center gap-2 absolute right-6 sm:right-16 z-20">
           <button className="custom-prev w-10 h-10 rounded-full bg-black shadow flex items-center justify-center hover:bg-[var(--campaign-header-bg)] transition cursor-pointer">
             <ChevronLeftIcon className="w-4 h-4 text-white" />
@@ -49,20 +50,21 @@ export default function SectionGallery() {
           768: { slidesPerView: 3, spaceBetween: 24 },
           1024: { slidesPerView: 3, spaceBetween: 28 },
           1280: { slidesPerView: 4, spaceBetween: 32 },
+          1536: { slidesPerView: 5, spaceBetween: 36 },
         }}
       >
         {items.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="!w-[280px] sm:!w-[320px] md:!w-[360px] lg:!w-[380px] !shrink-0 overflow-visible"
+            className="!w-[280px] sm:!w-[320px] md:!w-[360px] lg:!w-[380px] !shrink-0 cursor-pointer"
           >
-            <div className="relative w-full aspect-square rounded-2xl bg-white">
+            <div className="relative w-full aspect-square bg-[var(--background-primary)] rounded-2xl overflow-hidden">
               <Image
                 fill
                 sizes="(min-width:1024px) 340px, (min-width:768px) 300px, 260px"
                 src={item.image}
                 alt="image"
-                className="object-contain rounded-2xl"
+                className="object-contain hover:scale-105 transition-all duration-300"
                 priority
               />
             </div>
@@ -70,7 +72,7 @@ export default function SectionGallery() {
         ))}
       </Swiper>
 
-      {/* pagination (mobilde görünür) */}
+      {/* Pagination - sadece mobil */}
       <div className="custom-pagination flex justify-center gap-2 mt-6 sm:hidden" />
     </section>
   );

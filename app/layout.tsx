@@ -1,7 +1,9 @@
+// layout.tsx veya layout.jsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 
+// 1. Font'ları yükle (variable: CSS değişkeni oluşturur)
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -11,6 +13,23 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-montserrat',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-roboto', 
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +43,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" data-scroll-behavior="smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`
+        ${geistSans.variable} 
+        ${geistMono.variable} 
+        ${montserrat.variable}
+        ${inter.variable}
+        ${roboto.variable}
+        antialiased
+        font-sans /* Varsayılan font'u belirle */
+      `}>
         {children}
       </body>
     </html>

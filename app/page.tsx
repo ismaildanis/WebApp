@@ -11,23 +11,8 @@ export default function Home() {
       <Header /> 
       <div id="main-scroller" className="overflow-y-auto snap-y snap-mandatory h-full">
 
-        <FullPageSection className="bg-[url('/images/hero1.jpg')] bg-cover bg-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold">
-            Hoş Geldiniz
-          </h1>
-        </FullPageSection>
+        <FullPageSection />
 
-        <FullPageSection className="bg-[url('/images/hero2.jpg')] bg-cover bg-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold">
-            Kalite
-          </h1>
-        </FullPageSection>
-
-        <FullPageSection className="bg-[url('/images/swiper1.png')] bg-cover bg-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold">
-            Hizmet
-          </h1>
-        </FullPageSection>
 
         <div className="snap-start">
           <NormalContent>
