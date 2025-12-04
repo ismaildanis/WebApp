@@ -51,9 +51,27 @@ export default function Footer() {
         </div>
 
       </div>
-      
-      <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} <span className="text-white">Anka Metal</span> — Tüm hakları saklıdır.
+
+      <div className="
+        mt-12 py-10 pt-6 border-t border-white/10 
+        text-sm text-gray-400
+      ">
+        <div className="
+          flex flex-col md:flex-row 
+          items-center md:justify-between 
+          gap-4 md:gap-0
+          text-center md:text-left
+        ">
+          <div className="flex gap-6 justify-center md:ml-20">
+            <Link href="/kvkk" className="hover:text-white transition">KVKK</Link>
+            <Link href="/gizlilik-politikasi" className="hover:text-white transition">Gizlilik Politikası</Link>
+            <Link href="/cerez-politikasi" className="hover:text-white transition">Çerez Politikası</Link>
+          </div>
+
+          <span className="text-white md:mr-20">
+            © {new Date().getFullYear()} Anka Metal — Tüm hakları saklıdır.
+          </span>
+        </div>
       </div>
 
     </footer>
