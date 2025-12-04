@@ -1,11 +1,10 @@
-import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function AboutUs() {
   return (
     <main className="min-h-screen bg-[var(--background-primary)] py-16">
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <div className="relative w-full h-[50vh] ">
         <Image
           src="/images/hakkimizda.png"
@@ -35,6 +34,21 @@ export default function AboutUs() {
             metal olmak üzere 20+ metal türünde profesyonel ticaret gerçekleştiriyoruz.
           </p>
 
+          <div className="lg:hidden relative flex justify-center items-center my-8">
+            <div
+              className="absolute inset-0 h-64 w-64 bg-sky-100 opacity-70 blur-[90px] rounded-full"
+              aria-hidden
+            />
+            <div className="relative w-full max-w-sm space-y-4">
+              <div className="relative w-full h-52 rounded-xl overflow-hidden">
+                <Image src="/images/swiper4.png" fill alt="Hakkımızda 1" className="object-cover" />
+              </div>
+              <div className="relative w-full h-52 rounded-xl overflow-hidden">
+                <Image src="/images/swiper3.png" fill alt="Hakkımızda 2" className="object-cover" />
+              </div>
+            </div>
+          </div>
+
           <p>
             Yıllar içerisinde oluşturduğumuz güvenilir tedarik zinciri, güçlü sermaye yapısı ve modern 
             lojistik altyapı sayesinde 150+ ton üzeri ticaret kapasitesine ulaştık. 1000 km’yi aşan 
@@ -58,43 +72,25 @@ export default function AboutUs() {
             Vizyonumuz; hizmet verdiğimiz bölgelerde sürdürülebilir hurda metal ticareti yaparak hem 
             ekonomiye hem çevreye değer katmaktır.
           </p>
-
         </div>
 
-        <div className="relative flex justify-center items-center">
-        <div
-            className="absolute inset-0 h-72 w-72 bg-sky-100 opacity-70 blur-[90px] rounded-full mx-auto my-auto"
+        <div className="hidden lg:flex relative justify-center items-center">
+          <div
+            className="absolute inset-0 h-72 w-72 bg-sky-100 opacity-70 blur-[90px] rounded-full"
             aria-hidden
-        />
-
-        <div className="relative rounded-2xl shadow-xl overflow-hidden w-full max-w-md">
-            
-            <div className="flex flex-col gap-4 p-4">
-
+          />
+          <div className="relative rounded-2xl shadow-xl overflow-hidden w-full max-w-md space-y-4 p-4">
             <div className="relative w-full h-56 rounded-xl overflow-hidden">
-                <Image
-                src="/images/swiper4.png"
-                alt="Hakkımızda Görsel 1"
-                fill
-                className="object-cover"
-                />
+              <Image src="/images/swiper4.png" fill alt="Hakkımızda 1" className="object-cover" />
             </div>
-
             <div className="relative w-full h-56 rounded-xl overflow-hidden">
-                <Image
-                src="/images/swiper3.png"
-                alt="Hakkımızda Görsel 2"
-                fill
-                className="object-cover"
-                />
+              <Image src="/images/swiper3.png" fill alt="Hakkımızda 2" className="object-cover" />
             </div>
-
-            </div>
-        </div>
+          </div>
         </div>
 
       </section>
-      <Footer />
+
     </main>
   );
 }

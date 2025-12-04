@@ -3,9 +3,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import ConditionalHeader from "@/components/ConditionalHeader";
-import Footer from "@/components/Footer";
-import InfoBanner from "@/components/InfoBanner";
-import ConditionalBanner from "@/components/ConditionalBanner";
 
 // 1. Font'ları yükle (variable: CSS değişkeni oluşturur)
 const geistSans = Geist({
@@ -58,7 +55,7 @@ export default function RootLayout({
         `}
       >
         <ConditionalHeader />
-        <ConditionalBanner/>
+       
         <main >
           {children}
         </main>

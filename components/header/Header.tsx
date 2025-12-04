@@ -1,13 +1,12 @@
 "use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "../Logo";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   const Menu = [
     { name: "Anasayfa", href: "/" },
     { name: "Hakkımızda", href: "/hakkimizda" },
@@ -40,19 +39,41 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed flex justify-between items-center top-0 left-0 w-full z-[999] transition-all duration-500 h-16 w-full ${
+      className={`fixed top-0 left-0 w-full h-16 z-[999] shadow flex items-center justify-between px-4 sm:px-6 transition-all duration-500 ${
         show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
       } bg-[var(--background-primary)] shadow`}
     >
-      <Logo onClick={scrollTop} height={100} width={48} />
+      <Logo onClick={scrollTop} height={90} width={45} />
 
-      <ul className="flex text-xs sm:text-sm text-white md:gap-5 md:px-7 sm:mr-8 md:mr-10">
-        {Menu.map((i) => (
-          <li key={i.href}>
-            <Link href={i.href}>{i.name}</Link>
+      <ul className="hidden md:flex text-sm text-white gap-6 mr-6">
+        {Menu.map((item, index) => (
+          <li key={index} className={`${pathname === item.href ? "text-[#caa74d]" : "text-white"}`}>
+            <Link href={item.href}>{item.name}</Link>
           </li>
         ))}
       </ul>
+
+      <button onClick={() => setOpen(!open)} className="md:hidden text-white text-3xl">
+        ☰
+      </button>
+
+        {open && (
+          <div className="absolute top-16 right-0 w-48 bg-black/90 border border-white/10 rounded-lg p-4 md:hidden">
+            <ul className="flex flex-col gap-3 text-white text-sm">
+              {Menu.map((item, index) => (
+                <li
+                  key={index}
+                  className={`${pathname === item.href ? "text-[#caa74d]" : "text-white"}`}
+                >
+                  <Link href={item.href} onClick={() => setOpen(false)}>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
     </header>
   );
 }
