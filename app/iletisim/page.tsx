@@ -73,10 +73,10 @@ export default function Contact() {
                 E-posta
               </h3>
               <Link
-                href="mailto:cemmetal57@gmail.com"
+                href="mailto:ankametal60@gmail.com"
                 className="text-sm sm:text-base text-gray-300 break-all hover:text-[#caa74d] transition-colors"
               >
-                cemmetal57@gmail.com
+                ankametal60@gmail.com
               </Link>
             </div>
 

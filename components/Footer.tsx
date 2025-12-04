@@ -31,10 +31,10 @@ export default function Footer() {
             </li>
             <li className="mt-2">
               <Link
-                href="mailto:cemmetal57@gmail.com"
+                href="mailto:ankametal60@gmail.com"
                 className="hover:text-[#caa74d]"
               >
-                cemmetal57@gmail.com
+                ankametal60@gmail.com
               </Link>
             </li>
           </ul>

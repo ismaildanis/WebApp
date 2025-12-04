@@ -27,7 +27,7 @@ export default function Cookies() {
           güncellenecek ve çerez bilgilendirme banner’ı gösterilecektir.
         </p>
 
-        <p className="opacity-70">Her türlü soru için: cemmetal57@gmail.com</p>
+        <p className="opacity-70">Her türlü soru için: ankametal60@gmail.com</p>
       </div>
     </main>
   );

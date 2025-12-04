@@ -36,7 +36,7 @@ export default function Privacy() {
         </p>
 
         <p className="opacity-70">
-          Soru ve talepleriniz için: cemmetal57@gmail.com
+          Soru ve talepleriniz için: ankametal60@gmail.com
         </p>
       </div>
     </main>

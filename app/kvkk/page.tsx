@@ -50,7 +50,7 @@ export default function KVKK() {
         </p>
 
         <p className="opacity-70">
-          İletişim: cemmetal57@gmail.com — 0 538 917 31 43
+          İletişim: ankametal60@gmail.com — 0 538 917 31 43
         </p>
       </div>
     </main>
