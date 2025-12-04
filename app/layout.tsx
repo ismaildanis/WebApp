@@ -6,7 +6,7 @@ import ConditionalFooter from "@/components/ConditionalFooter";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://seninsite.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ankametalhurda.com"),
   title: "Anka Metal | Hurda Bakır – Demir – Alüminyum Alım Satım",
   description: "30+ yıllık tecrübe ile profesyonel hurda alım satım hizmeti.",
   
