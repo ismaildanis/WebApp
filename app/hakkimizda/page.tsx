@@ -4,7 +4,6 @@ export default function AboutUs() {
   return (
     <main className="min-h-screen bg-[var(--background-primary)] py-16">
 
-      {/* HERO */}
       <div className="relative w-full h-[50vh] ">
         <Image
           src="/images/hakkimizda.png"
