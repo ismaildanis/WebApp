@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="h-screen overflow-hidden">
       <Header /> 
-      <div id="main-scroller" className="overflow-y-auto snap-y snap-mandatory h-full">
+      <div id="main-scroller" className="overflow-y-auto snap-y snap-proximity h-full">
 
         <FullPageSection />
 
