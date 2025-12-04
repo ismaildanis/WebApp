@@ -7,10 +7,10 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const items = [
   { id: 1, image: "/images/swiper1.png" },
-  { id: 2, image: "/images/swiper1.png" },
-  { id: 3, image: "/images/swiper1.png" },
-  { id: 4, image: "/images/swiper1.png" },
-  { id: 5, image: "/images/swiper1.png" },
+  { id: 2, image: "/images/swiper2.png" },
+  { id: 3, image: "/images/swiper3.png" },
+  { id: 4, image: "/images/swiper4.png" },
+  { id: 5, image: "/images/swiper2.png" },
 ];
 
 export default function SectionGallery() {
@@ -18,8 +18,8 @@ export default function SectionGallery() {
     <section className="w-full">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4 relative">
         
-        <h2 className="text-2xl font-bold text-white ml-2 sm:ml-16 text-center sm:text-left">
-          POPÜLER ÜRÜNLER
+        <h2 className="text-2xl font-roboto font-bold text-white ml-2 sm:ml-16 text-center sm:text-left">
+          ÜRÜNLER
         </h2>
 
         {/* Masaüstü oklar */}
@@ -30,7 +30,7 @@ export default function SectionGallery() {
           <button className="custom-next w-10 h-10 rounded-full bg-black shadow flex items-center justify-center hover:bg-[var(--campaign-header-bg)] transition cursor-pointer">
             <ChevronRightIcon className="w-4 h-4 text-white" />
           </button>
-        </div>
+        </div> 
       </div>
 
       <Swiper
@@ -58,13 +58,13 @@ export default function SectionGallery() {
             key={item.id}
             className="!w-[280px] sm:!w-[320px] md:!w-[360px] lg:!w-[380px] !shrink-0 cursor-pointer"
           >
-            <div className="relative w-full aspect-square bg-[var(--background-primary)] rounded-2xl overflow-hidden">
+            <div className="relative w-full aspect-[4/3] bg-[var(--background-primary)] rounded-2xl overflow-hidden">
               <Image
                 fill
                 sizes="(min-width:1024px) 340px, (min-width:768px) 300px, 260px"
                 src={item.image}
                 alt="image"
-                className="object-contain hover:scale-105 transition-all duration-300"
+                className="object-cover hover:scale-105 transition-all duration-300"
                 priority
               />
             </div>

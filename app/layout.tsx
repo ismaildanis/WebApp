@@ -16,14 +16,14 @@ const geistMono = Geist_Mono({
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['200', '300', '400', '500', '600', '700'],
   variable: '--font-montserrat',
-})
-
+});
 const inter = Inter({
   subsets: ['latin'],
+  weight: ['200', '300', '400'],
   variable: '--font-inter',
-})
+});
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -43,15 +43,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" data-scroll-behavior="smooth">
-      <body className={`
-        ${geistSans.variable} 
-        ${geistMono.variable} 
-        ${montserrat.variable}
-        ${inter.variable}
-        ${roboto.variable}
-        antialiased
-        font-sans /* Varsayılan font'u belirle */
-      `}>
+      <body
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable} 
+          ${montserrat.variable}
+          ${inter.variable}
+          ${roboto.variable}
+          antialiased
+        `}
+      >
         {children}
       </body>
     </html>
