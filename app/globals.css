@@ -4,12 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --background-primary: #1a1a1a;
+  --background-primary: #131313;
   --secondary: #2D2D2D;
   --emphasis: #FF7A00;
   --emphasis-2: #1E90FF;
   --clean: #FFFFFF;
   --soft-text: #C7C7C7;
+  --gold: #8b6b2f;
 
 
   --font-geist-sans: 'Geist', sans-serif;
@@ -36,6 +37,15 @@
   }
 }
 
+@keyframes marquee {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -45,4 +55,12 @@ body {
 
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

@@ -5,12 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
+
 const items = [
-  { id: 1, image: "/images/swiper1.png" },
-  { id: 2, image: "/images/swiper2.png" },
-  { id: 3, image: "/images/swiper3.png" },
-  { id: 4, image: "/images/swiper4.png" },
-  { id: 5, image: "/images/swiper2.png" },
+  { id: 1, name: "Demir Hurda", image: "/images/demir.png" },
+  { id: 2, name: "Bakır", image: "/images/bakır.png" },
+  { id: 3, name: "Nikel", image: "/images/nikel.png" },
+  { id: 4, name: "Paslanmaz Çelik", image: "/images/paslanmazcelik.png" },
+  { id: 5, name: "Alüminyum", image: "/images/swiper4.png" },
+  { id: 6, name: "Araba Hurda Parçası", image: "/images/arabahurda.png" },
 ];
 
 export default function SectionGallery() {
@@ -22,13 +24,12 @@ export default function SectionGallery() {
           ÜRÜNLER
         </h2>
 
-        {/* Masaüstü oklar */}
         <div className="hidden sm:flex items-center gap-2 absolute right-6 sm:right-16 z-20">
-          <button className="custom-prev w-10 h-10 rounded-full bg-black shadow flex items-center justify-center hover:bg-[var(--campaign-header-bg)] transition cursor-pointer">
-            <ChevronLeftIcon className="w-4 h-4 text-white" />
+          <button className="custom-prev w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-[var(--gold)] transition cursor-pointer">
+            <ChevronLeftIcon className="w-4 h-4 text-black" />
           </button>
-          <button className="custom-next w-10 h-10 rounded-full bg-black shadow flex items-center justify-center hover:bg-[var(--campaign-header-bg)] transition cursor-pointer">
-            <ChevronRightIcon className="w-4 h-4 text-white" />
+          <button className="custom-next w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-[var(--gold)] transition cursor-pointer">
+            <ChevronRightIcon className="w-4 h-4 text-black" />
           </button>
         </div> 
       </div>
@@ -59,13 +60,20 @@ export default function SectionGallery() {
             className="!w-[280px] sm:!w-[320px] md:!w-[360px] lg:!w-[380px] !shrink-0 cursor-pointer"
           >
             <div className="relative w-full aspect-[4/3] bg-[var(--background-primary)] rounded-2xl overflow-hidden">
+
+              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60 z-[1]" />
+
+              <div className="z-[2] absolute bottom-4 left-4">
+                <span className="text-xl md:text-2xl font-bold text-white drop-shadow-lg">
+                  {item.name}
+                </span>
+              </div>
+
               <Image
                 fill
-                sizes="(min-width:1024px) 340px, (min-width:768px) 300px, 260px"
                 src={item.image}
-                alt="image"
-                className="object-cover hover:scale-105 transition-all duration-300"
-                priority
+                alt=""
+                className="object-cover z-0 transition-all duration-300 hover:scale-105"
               />
             </div>
           </SwiperSlide>

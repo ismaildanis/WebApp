@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function FullPageSection() {
   const Menu = [
-    { name: "Anasayfa" },
-    { name: "Hakkımızda" },
-    { name: "Ürünler" },
-    { name: "İletişim" },
+    { name: "Anasayfa", href: "/" },
+    { name: "Hakkımızda", href: "/hakkimizda" },
+    { name: "Ürünler", href: "/urunler" },
+    { name: "İletişim", href: "/iletisim" },
   ];
 
   return (
@@ -22,13 +23,22 @@ export default function FullPageSection() {
         }}
       >
 
-        <div className="absolute z-[2] top-[20%] left-[8%] sm:left-[10%] md:left-[12%] max-w-[420px] p-6 rounded-xl">
-          <p className="text-white text-lg sm:text-xl md:text-3xl font-roboto leading-relaxed">
-            Bakır ve alüminyum alım satımında güvenilir, kaliteli ve sürdürülebilir
-            çözümler sunuyor; sektörün ihtiyaçlarına hızlı, şeffaf ve profesyonel
-            yaklaşımımızla değer katıyoruz.
-          </p>
-        </div>
+          <div className="absolute z-[2] top-[25%] left-[8%] sm:left-[10%] md:left-[12%] max-w-[420px] p-6 rounded-xl flex flex-col gap-6">
+
+            <p className="text-white text-lg sm:text-xl md:text-xl font-roboto leading-relaxed">
+              Bakır ve alüminyum alım satımında güvenilir, kaliteli ve sürdürülebilir
+              çözümler sunuyor; sektörün ihtiyaçlarına hızlı, şeffaf ve profesyonel
+              yaklaşımımızla değer katıyoruz.
+            </p>
+
+            <div className="flex md:hidden">
+              <Logo height={250} width={160} />
+            </div>
+          </div>
+
+          <div className="absolute z-[2] right-[2%] hidden md:block">
+            <Logo height={400} width={380} />
+          </div>
       </div>
       
 
@@ -36,7 +46,7 @@ export default function FullPageSection() {
           <ul className="flex gap-3 sm:gap-6 lg:gap-10 py-4 sm:py-6 text-xs sm:text-sm lg:text-base uppercase text-white">
             {Menu.map((item, idx) => (
               <li key={idx} className="hover:text-[var(--emphasis)] transition-all duration-200">
-                <Link href="#">{item.name}</Link>
+                <Link href={item.href}>{item.name}</Link>
               </li>
             ))}
           </ul>

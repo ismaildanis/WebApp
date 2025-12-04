@@ -4,6 +4,7 @@ import SectionFeatures from "@/components/SectionFeatures";
 import SectionGallery from "@/components/SectionGallery";
 import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";
+import CitiesBanner from "@/components/CitiesBanner";
 
 export default function Home() {
   return (
@@ -13,10 +14,10 @@ export default function Home() {
 
         <FullPageSection />
 
-
         <div className="snap-start">
           <NormalContent>
             <SectionFeatures />
+            <CitiesBanner />
             <SectionGallery />
             <Footer />
           </NormalContent>
