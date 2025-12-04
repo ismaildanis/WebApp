@@ -1,7 +1,16 @@
-"use client";
-
 import Image from "next/image";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+export const metadata = {
+  title: "Hurda Çeşitleri | Bakır – Demir – Alüminyum – Pirinç | Anka Metal",
+  description:
+    "Hurda bakır, demir, alüminyum, pirinç ve sanayi hurdası çeşitleri. Güncel fiyatlarla güvenilir hurda alımı.",
+    
+  alternates: {
+    canonical: `${siteUrl}/hakkimizda`,
+  },
+};
 export default function Product() {
   const categories = [
     {

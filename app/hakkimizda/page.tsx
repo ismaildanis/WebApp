@@ -1,5 +1,17 @@
 import Image from "next/image";
 
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+export const metadata = {
+  title: "Hakkımızda | Anka Metal Hurda Alım Satım | 30+ Yıllık Tecrübe",
+  description:
+    "Anka Metal, 30+ yıllık tecrübesiyle güvenilir hurda ticareti sağlar. Peşin ödeme, yerinde tartım, hızlı nakliye.",
+  alternates: {
+    canonical: `${siteUrl}/hakkimizda`,
+  },
+};
+
 export default function AboutUs() {
   return (
     <main className="min-h-screen bg-[var(--background-primary)] py-16">

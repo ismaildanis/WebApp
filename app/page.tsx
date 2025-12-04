@@ -6,7 +6,19 @@ import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";
 import CitiesBanner from "@/components/CitiesBanner";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+export const metadata = {
+  title: "Anka Metal | Hurda Bakır, Demir, Alüminyum Alımı | Peşin Ödeme",
+  description:
+    "Anka Metal; hurda bakır, demir, alüminyum, pirinç ve sanayi hurdası alımında peşin ödeme ve yerinde tartım garantisi sunar.",
+  alternates: {
+    canonical: `${siteUrl}`,
+  },
+};
+
 export default function Home() {
+
   return (
     <main className="h-screen overflow-hidden">
       <Header /> 

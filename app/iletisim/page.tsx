@@ -1,5 +1,16 @@
 import Link from "next/link";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+export const metadata = {
+  title: "İletişim | Hurda Fiyatı Sorgula | Anka Metal WhatsApp Destek",
+  description:
+    "Hurda fiyatları için WhatsApp üzerinden bize ulaşın. Peşin ödeme, yerinde tartım, hızlı nakliye.",
+  alternates: {
+    canonical: `${siteUrl}/iletisim`,
+  },
+};
+
 export default function Contact() {
   return (
     <section className="min-h-screen bg-[var(--background-primary)] mt-16 px-6 md:px-16 py-12 text-white">

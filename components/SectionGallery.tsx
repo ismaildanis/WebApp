@@ -23,10 +23,10 @@ export default function SectionGallery() {
         <h2 className="text-2xl font-bold text-white">ÜRÜNLER</h2>
 
         <div className="hidden md:flex items-center gap-3 absolute right-0">
-          <button className="custom-prev w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center hover:bg-[var(--gold)] transition">
+          <button className="custom-prev w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center hover:bg-[var(--gold)] transition cursor-pointer">
             <ChevronLeftIcon className="w-5 h-5 text-black" />
           </button>
-          <button className="custom-next w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center hover:bg-[var(--gold)] transition">
+          <button className="custom-next w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center hover:bg-[var(--gold)] transition cursor-pointer">
             <ChevronRightIcon className="w-5 h-5 text-black" />
           </button>
         </div>
@@ -56,7 +56,7 @@ export default function SectionGallery() {
         {items.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="cursor-pointer group"
+            className="group"
           >
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black">
 

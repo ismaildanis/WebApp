@@ -1,9 +1,7 @@
 "use client";
-
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import CountUp from "./CountUp";
-import { linearGradient } from "framer-motion/client";
 import GradientText from "./Gradient";
 
 const items = [
