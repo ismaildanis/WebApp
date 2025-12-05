@@ -4,9 +4,9 @@ import Image from "next/image";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
-  title: "Hakkımızda | Anka Metal Hurda Alım Satım | 30+ Yıllık Tecrübe",
+  title: "Hakkımızda | Anka Metal Hurda Alım Satım | İstanbul Hurdacı | Tekirdağ Hurdacı | 30+ Yıllık Tecrübe",
   description:
-    "Anka Metal, 30+ yıllık tecrübesiyle güvenilir hurda ticareti sağlar. Peşin ödeme, yerinde tartım, hızlı nakliye.",
+    "Anka Metal, 30+ yıllık tecrübesiyle güvenilir hurda ticareti sağlar. Peşin ödeme, yerinde tartım, hızlı nakliye. | İstanbul Hurdacı | Demir Hurda | Bakır Hurda | Alüminyum Hurda | Tekirdağ Hurdacı | Kocaeli Hurdacı | Edirne Hurdacı",
   alternates: {
     canonical: `${siteUrl}/hakkimizda`,
   },
@@ -19,7 +19,7 @@ export default function AboutUs() {
       <div className="relative w-full h-[50vh] ">
         <Image
           src="/images/hakkimizda.png"
-          alt="Hakkımızda"
+          alt="Hakkımızda | Anka Metal Hurda Alım Satım | İstanbul Hurdacı | Tekirdağ Hurdacı"
           fill
           priority
           sizes="100vw"
@@ -52,10 +52,10 @@ export default function AboutUs() {
             />
             <div className="relative w-full max-w-sm space-y-4">
               <div className="relative w-full h-52 rounded-xl overflow-hidden">
-                <Image src="/images/swiper4.png" fill alt="Hakkımızda 1" className="object-cover" />
+                <Image src="/images/swiper4.png" fill alt="Hakkımızda | Anka Metal Hurda Alım Satım | İstanbul Hurdacı | Tekirdağ Hurdacı" className="object-cover" />
               </div>
               <div className="relative w-full h-52 rounded-xl overflow-hidden">
-                <Image src="/images/swiper3.png" fill alt="Hakkımızda 2" className="object-cover" />
+                <Image src="/images/swiper3.png" fill alt="Hakkımızda | Anka Metal Hurda Alım Satım | İstanbul Hurdacı | Kocaeli Hurdacı" className="object-cover" />
               </div>
             </div>
           </div>
@@ -92,10 +92,10 @@ export default function AboutUs() {
           />
           <div className="relative rounded-2xl shadow-xl overflow-hidden w-full max-w-md space-y-4 p-4">
             <div className="relative w-full h-56 rounded-xl overflow-hidden">
-              <Image src="/images/swiper4.png" fill alt="Hakkımızda 1" className="object-cover" />
+              <Image src="/images/swiper4.png" fill alt="Hakkımızda | Anka Metal Hurda Alım Satım | İstanbul Hurdacı | Demir Talaş" className="object-cover" />
             </div>
             <div className="relative w-full h-56 rounded-xl overflow-hidden">
-              <Image src="/images/swiper3.png" fill alt="Hakkımızda 2" className="object-cover" />
+              <Image src="/images/swiper3.png" fill alt="Hakkımızda | Anka Metal Hurda Alım Satım | Tekirdağ Hurdacı | Bakır Talaş" className="object-cover" />
             </div>
           </div>
         </div>

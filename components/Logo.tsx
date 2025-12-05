@@ -17,7 +17,7 @@ export default function Logo({onClick, height, width}: Props) {
             >
                 <Image
                 src="/images/logo.png"
-                alt="MetalWeb"
+                alt="Anka Metal | Hurda, Talaş Alım Satım"
                 width={height}  
                 height={width}
                 className="object-contain"

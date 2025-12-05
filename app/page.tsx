@@ -9,9 +9,9 @@ import CitiesBanner from "@/components/CitiesBanner";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
-  title: "Anka Metal | Türkiye'nin Pek Çok Yerinde Hurda Alımı | Bakır, Demir, Alüminyum",
+  title: "Anka Metal | Türkiye'nin Pek Çok Yerinde Hurda Alımı | İstanbul Hurdacı - Demir Hurda - Bakır Hurda - Alüminyum Hurda",
   description:
-    "İstanbul genelinde hurda bakır, demir ve alüminyum alımında peşin ödeme ve hızlı yerinde tartım hizmeti. Anka Metal ile güvenilir hurdacı hizmeti."
+    "İstanbul genelinde hurda bakır, demir, paslanmaz çelik ve alüminyum alımında peşin ödeme | İstanbul Hurdacı | Demir Hurda | Bakır Hurda | Alüminyum Hurda | Tekirdağ Hurdacı | Kocaeli Hurdacı | Edirne Hurdacı"
   ,
   alternates: {
     canonical: `${siteUrl}`,

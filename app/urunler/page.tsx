@@ -17,6 +17,7 @@ export default function Product() {
       id: 1,
       name: "Demir ve Çelik Grubu",
       image: "/images/demir.png",
+      alt: "Demir ve çelik hurda çeşitleri – inşaat demiri, DKP, çelik profil – Anka Metal",
       items: [
         "Hurda demir",
         "DKP hurda (temiz demir)",
@@ -31,6 +32,7 @@ export default function Product() {
       id: 2,
       name: "Bakır Grubu",
       image: "/images/bakır.png",
+      alt: "Hurda bakır kablo, boru ve soyulmuş bakır çeşitleri – Anka Metal geri dönüşüm",
       items: [
         "Soyulmuş bakır kablo",
         "Karışık bakır kablo",
@@ -44,6 +46,7 @@ export default function Product() {
       id: 3,
       name: "Alüminyum Grubu",
       image: "/images/swiper4.png",
+      alt: "Alüminyum hurda çeşitleri – jant, profil, levha ve kablo hurdası",
       items: [
         "Alüminyum profil",
         "Alüminyum içecek kutusu",
@@ -57,6 +60,7 @@ export default function Product() {
       id: 4,
       name: "Pirinç (Sarı) & Bronz",
       image: "/images/sarı.png",
+      alt: "Pirinç ve bronz hurda türleri – musluk, vana ve sarı hurda çeşitleri",
       items: [
         "Sarı pirinç (musluk, vana, bağlantı parçaları)",
         "Bronz dişliler",
@@ -68,6 +72,7 @@ export default function Product() {
       id: 5,
       name: "Paslanmaz Çelik – Krom – Inox",
       image: "/images/paslanmazcelik.png",
+      alt: "304, 316 ve paslanmaz çelik hurda çeşitleri – krom ve inox geri dönüşüm",
       items: [
         "304 paslanmaz",
         "316 paslanmaz",
@@ -81,6 +86,7 @@ export default function Product() {
       id: 6,
       name: "Elektronik ve Kablo Hurdası",
       image: "/images/nikel.png",
+      alt: "Elektronik hurda, trafo ve kablo geri dönüşümü – anakart ve motor hurdası",
       items: [
         "Bakır & alüminyum kablo",
         "Elektronik kartlar (anakart, RAM, CPU)",
@@ -93,6 +99,7 @@ export default function Product() {
       id: 7,
       name: "Çinko – Nikel – Kalay – Magnezyum",
       image: "/images/nikel.png",
+      alt: "Çinko, nikel, kalay ve magnezyum alaşımlı hurda çeşitleri",
       items: [
         "Galvaniz (çinko) malzemeler",
         "Nikel alaşımları",
@@ -104,6 +111,7 @@ export default function Product() {
       id: 8,
       name: "Araç Hurdaları",
       image: "/images/arabahurda.png",
+      alt: "Araç hurdaları – motor, jant, radyatör ve gövde hurda çeşitleri",
       items: [
         "Alüminyum / çelik jant",
         "Hurda motor",
@@ -115,6 +123,7 @@ export default function Product() {
       id: 9,
       name: "Evsel Metal Ürünleri",
       image: "/images/demir.png",
+      alt: "Evsel metal hurdaları – beyaz eşya, petek, tencere ve metal mobilya hurdası",
       items: [
         "Beyaz eşya (buzdolabı, çamaşır makinesi, fırın)",
         "Alüminyum / paslanmaz tava & tencere",
@@ -138,7 +147,7 @@ export default function Product() {
             <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4">
               <Image
                 src={category.image}
-                alt={category.name}
+                alt={category.alt}
                 fill
                 className="object-cover hover:scale-105 transition-all duration-300"
               />

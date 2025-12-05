@@ -5,7 +5,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 export const metadata = {
   title: "İletişim | Hurda Fiyatı Sorgula | Anka Metal WhatsApp Destek",
   description:
-    "Hurda fiyatları için WhatsApp üzerinden bize ulaşın. Peşin ödeme, yerinde tartım, hızlı nakliye.",
+    "Hurda fiyatları için WhatsApp üzerinden bize ulaşın. Anında hurda alım-satım | Peşin ödeme, yerinde tartım, hızlı nakliye.",
   alternates: {
     canonical: `${siteUrl}/iletisim`,
   },

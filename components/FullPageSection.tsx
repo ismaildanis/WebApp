@@ -64,7 +64,7 @@ export default function FullPageSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 z-[3]">
         <ul className="flex justify-center gap-4 sm:gap-6 lg:gap-10 py-4 text-xs sm:text-sm lg:text-base uppercase text-white">
           {Menu.map((item, idx) => (
-            <li key={idx} className="hover:text-[var(--emphasis)] transition-all duration-200">
+            <li key={idx} className="hover:text-[#caa74d] transition-all duration-200">
               <Link href={item.href}>{item.name}</Link>
             </li>
           ))}

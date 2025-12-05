@@ -7,9 +7,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ankametalhurda.com"),
-  title: "Anka Metal | Hurda Bakır – Demir – Alüminyum Alım Satım",
-  description: "30+ yıllık tecrübe ile profesyonel hurda alım satım hizmeti.",
-  
+  title: "Anka Metal | İstanbul Hurdacı | Tekirdağ Hurdacı | Hurda Bakır – Demir – Alüminyum Alım Satım",
+  description: "İstanbul genelinde hurda bakır, demir ve alüminyum alımında peşin ödeme. 30+ yıllık tecrübe ile anında hurda alım satım hizmeti.",
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Anka Metal | Hurda Alım Satım",
     description: "Bakır, demir, alüminyum ve sanayi hurdası alımında güvenilir firma.",
@@ -83,20 +88,32 @@ export default function RootLayout({
               telephone: "+90 538 917 31 43",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Çınarcık – Yalova",
-                addressLocality: "Yalova",
-                addressRegion: "Marmara",
-                postalCode: "77200",
-                addressCountry: "TR",
+                streetAddress: "Çorlu",
+                addressLocality: "Çorlu",
+                addressRegion: "Tekirdağ",
+                postalCode: "59850",
+                addressCountry: "TR"
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 40.6480,
-                longitude: 29.1458
+                latitude: 41.1598,
+                longitude: 27.7990
               },
               openingHours: "Mo-Sa 08:00-20:00",
               description:
-                "Hurda bakır, demir, alüminyum, pirinç ve sanayi hurdası alım satımında güvenilir ve profesyonel hizmet.",
+                "Hurda bakır, demir, alüminyum, pirinç ve sanayi hurdası alım satımında güvenilir ve anında hizmet. | İstanbul Hurdacı | Tekirdağ Hurdacı | Kocaeli Hurdacı | Edirne Hurdacı | Demir Hurda | Bakır Hurda | Alüminyum Hurda",
+              areaServed: [
+                "İstanbul",
+                "İstanbul Avrupa Yakası",
+                "İstanbul Anadolu Yakası",
+                "Tekirdağ",
+                "Çorlu",
+                "Çerkezköy",
+                "Kocaeli",
+                "Gebze",
+                "Bolu",
+                "Edirne"
+              ]
             }),
           }}
         />

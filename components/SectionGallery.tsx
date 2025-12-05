@@ -6,13 +6,13 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const items = [
-  { id: 1, name: "Demir Hurda", image: "/images/demir.png" },
-  { id: 2, name: "Bakır", image: "/images/bakır.png" },
-  { id: 3, name: "Nikel", image: "/images/nikel.png" },
-  { id: 4, name: "Paslanmaz Çelik", image: "/images/paslanmazcelik.png" },
-  { id: 5, name: "Alüminyum", image: "/images/swiper4.png" },
-  { id: 6, name: "Araba Hurda Parçası", image: "/images/arabahurda.png" },
-  { id: 7, name: "Pirinç", image: "/images/sarı.png" },
+  { id: 1, name: "Demir Hurda", image: "/images/demir.png", alt: "Demir ve çelik hurda çeşitleri – inşaat demiri, DKP, çelik profil – Anka Metal" },
+  { id: 2, name: "Bakır", image: "/images/bakır.png", alt: "Hurda bakır kablo, boru ve soyulmuş bakır çeşitleri – Anka Metal geri dönüşüm" },
+  { id: 3, name: "Nikel", image: "/images/nikel.png", alt: "Hurda nikel kablo, boru ve soyulmuş nikel çeşitleri – Anka Metal geri dönüşüm" },
+  { id: 4, name: "Paslanmaz Çelik", image: "/images/paslanmazcelik.png", alt: "Hurda paslanmaz çelik kablo, boru ve soyulmuş paslanmaz çelik çeşitleri – Anka Metal geri dönüşüm" },
+  { id: 5, name: "Alüminyum", image: "/images/swiper4.png", alt: "Hurda alüminyum kablo, boru ve soyulmuş alüminyum çeşitleri – Anka Metal geri dönüşüm" },
+  { id: 6, name: "Araba Hurda Parçası", image: "/images/arabahurda.png", alt: "Hurda araba parçası – Anka Metal geri dönüşüm" },
+  { id: 7, name: "Pirinç", image: "/images/sarı.png", alt: "Hurda pirinç kablo, boru ve soyulmuş pirinç çeşitleri – Anka Metal geri dönüşüm" },
 ];
 
 export default function SectionGallery() {
@@ -71,7 +71,7 @@ export default function SectionGallery() {
               <Image
                 fill
                 src={item.image}
-                alt={item.name}
+                alt={item.alt}
                 className="object-cover z-0 transition-transform duration-500 group-hover:scale-110"
               />
             </div>
