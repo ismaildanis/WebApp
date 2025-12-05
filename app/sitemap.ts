@@ -1,22 +1,23 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default function sitemap() {
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-    
-    return [
-        {
-        url: `${siteUrl}/`,
-        lastModified: new Date(),
-        },
-        {
-        url: `${siteUrl}/hakkimizda`,
-        lastModified: new Date(),
-        },
-        {
-        url: `${siteUrl}/urunler`,
-        lastModified: new Date(),
-        },
-        {
-        url: `${siteUrl}/iletisim`,
-        lastModified: new Date(),
-        },
-    ];
+  return [
+    {
+      url: 'https://ankametalhurda.com',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://ankametalhurda.com/hakkimizda',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://ankametalhurda.com/urunler',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://ankametalhurda.com/iletisim',
+      lastModified: new Date(),
+    },
+  ];
 }
