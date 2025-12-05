@@ -9,9 +9,10 @@ import CitiesBanner from "@/components/CitiesBanner";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
-  title: "Anka Metal | Hurda Bakır, Demir, Alüminyum Alımı | Peşin Ödeme",
+  title: "Anka Metal | Türkiye'nin Pek Çok Yerinde Hurda Alımı | Bakır, Demir, Alüminyum",
   description:
-    "Anka Metal; hurda bakır, demir, alüminyum, pirinç ve sanayi hurdası alımında peşin ödeme ve yerinde tartım garantisi sunar.",
+    "İstanbul genelinde hurda bakır, demir ve alüminyum alımında peşin ödeme ve hızlı yerinde tartım hizmeti. Anka Metal ile güvenilir hurdacı hizmeti."
+  ,
   alternates: {
     canonical: `${siteUrl}`,
   },
@@ -29,6 +30,11 @@ export default function Home() {
         <div className="snap-start">
           <NormalContent>
             <SectionFeatures />
+            <p className="mt-4 text-white text-base md:text-lg leading-relaxed">
+              Anka Metal, İstanbul genelinde hurda bakır, hurda demir, alüminyum ve sanayi hurdası 
+              alımında peşin ödeme ve yerinde tartım hizmeti sunar. Esenyurt, Avcılar, Beylikdüzü, 
+              Büyükçekmece, Başakşehir ve çevre ilçelerde anında hurda alım hizmeti veriyoruz.
+            </p>
             <CitiesBanner />
             <SectionGallery />
             <Footer />

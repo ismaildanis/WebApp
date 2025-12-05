@@ -66,9 +66,6 @@ export default function SectionFeatures() {
         Demir, çelik, alüminyum ve bakır gibi temel metalleri güvenilir kaynaklardan temin ediyor,
         ihtiyaç duyduğunuz ürünleri hızlı ve uygun fiyatlarla sunuyoruz.
       </p>
-      <p className="text-base md:text-lg text-white leading-relaxed">
-        30+ yıllık tecrübe ile hurda metal ticaretinde güvenin adresiyiz.
-      </p>
     </motion.div>
   );
 }

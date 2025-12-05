@@ -6,13 +6,19 @@ export default function Footer() {
 
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-        <div>
-          <h2 className="text-xl font-bold text-[#caa74d]">Anka Metal</h2>
-          <p className="text-gray-300 text-sm leading-relaxed mt-3">
-            30+ yıllık tecrübemizle hurda metal alım satımı, yerinde alım,
-            yüksek tonajlı lojistik ve güvenilir ticaret çözümleri sunuyoruz.
-          </p>
-        </div>
+      <div>
+        <h2 className="text-xl font-bold text-[#caa74d]">Anka Metal</h2>
+
+        <p className="text-gray-300 text-sm leading-relaxed mt-3">
+          30+ yıllık deneyimimizle hurda bakır, hurda demir, alüminyum ve sanayi hurdası 
+          alımında güvenilir, hızlı ve profesyonel hizmet sunuyoruz. Yerinde tartım, 
+          peşin ödeme ve yüksek tonajlı lojistik çözümleriyle İstanbul’un tüm ilçelerinde çalışıyoruz.
+        </p>
+
+        <p className="text-sm text-gray-300 mt-2">
+          Anka Metal – İstanbul hurdacı | Hurda bakır, demir ve alüminyum alımı | Peşin ödeme – anında hizmet
+        </p>
+      </div>
 
         <div>
           <h3 className="text-lg font-semibold text-[#caa74d] mb-3">İletişim</h3>
