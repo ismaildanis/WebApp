@@ -12,7 +12,7 @@ export default function Footer() {
         <p className="text-gray-300 text-sm leading-relaxed mt-3">
           30+ yıllık deneyimimizle hurda bakır, hurda demir, alüminyum ve sanayi hurdası 
           alımında güvenilir, hızlı ve profesyonel hizmet sunuyoruz. Yerinde tartım, 
-          peşin ödeme ve yüksek tonajlı lojistik çözümleriyle İstanbul’un tüm ilçelerinde çalışıyoruz.
+          peşin ödeme ve yüksek tonajlı lojistik çözümleriyle İstanbul, Tekirdağ, Kocaeli, Bolu ve Ankara ilçelerinde çalışıyoruz.
         </p>
 
         <p className="text-sm text-gray-300 mt-2">
