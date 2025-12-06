@@ -40,8 +40,10 @@
 }
 
 body {
+  background: #0a0a0a !important;
+  color: #ffffff !important;
   font-family: Arial, Helvetica, sans-serif, 'Montserrat', 'Oswald', 'Work Sans', 'Inter', 'Roboto';
- 
+
 }
 
 .scrollbar-none::-webkit-scrollbar {
