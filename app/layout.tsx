@@ -126,6 +126,7 @@ export default function RootLayout({
           ${inter.variable}
           ${roboto.variable}
           antialiased
+          bg-black text-white
         `}
       >
         <ConditionalHeader />
