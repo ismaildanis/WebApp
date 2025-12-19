@@ -11,8 +11,14 @@ export const metadata = {
   description: "İstanbul genelinde hurda bakır, demir ve alüminyum alımında peşin ödeme. 30+ yıllık tecrübe ile anında hurda alım satım hizmeti.",
 
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon-48.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/favicon-48.png",
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
