@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Montserrat, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import ConditionalHeader from "@/components/ConditionalHeader";
 import ConditionalFooter from "@/components/ConditionalFooter";
+import Script from "next/script";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
@@ -81,6 +82,19 @@ export default function RootLayout({
   return (
     <html lang="tr" data-scroll-behavior="smooth">
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17817613310"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17817613310');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
