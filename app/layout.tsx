@@ -8,7 +8,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ankametalhurda.com"),
-  title: "Anka Metal | İstanbul Hurdacı | Tekirdağ Hurdacı | Hurda Bakır – Demir – Alüminyum Alım Satım",
+  title: "Anka Metal | İstanbul Hurdacı | Gebze Hurdacı | Tekirdağ Hurdacı | Hurda Bakır – Demir – Alüminyum Alım Satım",
   description: "İstanbul genelinde hurda bakır, demir ve alüminyum alımında peşin ödeme. 30+ yıllık tecrübe ile anında hurda alım satım hizmeti.",
 
   icons: {
@@ -108,10 +108,10 @@ export default function RootLayout({
               telephone: "+90 538 917 31 43",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Çorlu",
-                addressLocality: "Çorlu",
-                addressRegion: "Tekirdağ",
-                postalCode: "59850",
+                streetAddress: "Gebze",
+                addressLocality: "Gebze",
+                addressRegion: "Kocaeli",
+                postalCode: "41400",
                 addressCountry: "TR"
               },
               geo: {
